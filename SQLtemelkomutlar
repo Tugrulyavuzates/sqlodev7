@@ -11,6 +11,7 @@ SELECT COUNT(customer), store_id from customer
 GROUP BY store_id
 //
 
-SELECT COUNT(*), country_id from city
+SELECT COUNT(city), country_id from city
 GROUP BY country_id 
-ORDER BY count(*) DESC
+ORDER BY count(city) DESC
+LIMIT 1
