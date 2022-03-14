@@ -1,0 +1,16 @@
+SELECT COUNT(*), rating FROM film
+GROUP BY rating
+//grouping by rating
+
+SELECT COUNT(*), replacement_cost FROM film
+GROUP BY replacement_cost
+HAVING COUNT(*) >50
+//
+
+SELECT COUNT(customer), store_id from customer
+GROUP BY store_id
+//
+
+SELECT COUNT(*), country_id from city
+GROUP BY country_id 
+ORDER BY count(*) DESC
